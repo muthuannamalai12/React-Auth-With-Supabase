@@ -4,8 +4,8 @@ import { Auth } from "@supabase/auth-ui-react";
 import {ThemeSupa} from "@supabase/auth-ui-shared";
 import { useNavigate } from "react-router-dom";
 const supabase = createClient(
-    process.env.REACT_APP_SUPABASE_URL,
-    process.env.REACT_APP_SUPABASE_API_KEY
+    process.env.REACT_APPLICATION_SUPABASE_URL,
+    process.env.REACT_APPLICATION_SUPABASE_API_KEY
 ); 
 function Login() {
   const navigate = useNavigate();
