@@ -20,7 +20,7 @@ function Success() {
     getUserData();
   }, []);
   const avatar = user?.user_metadata?.avatar_url;
-  const userName = user?.user_metadata?.full_Name;
+  const userName = user?.user_metadata?.full_name;
   async function signOutUser() {
     await supabase.auth.signOut();
     navigate("/login");
